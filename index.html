@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Calificación</title>
+<i> <u><h1>Calor Y Temperatura</h1></u></i>
+<h3>Integrantes</h3>
+	<li>Aguirre Salazar Michel Guillermo</li>
+	<li>Gonzales Rosas Luis Angel</li>
+	<li>Pacheco Alvarez Angel Gabriel</li>
+	<li>Sierra Hernandez Osman</li>
+<h3>4°CPM</h3>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('https://static.vecteezy.com/system/resources/thumbnails/009/831/146/small/banner-web-template-abstract-blue-and-golden-wave-curved-lines-overlapping-layer-design-on-dark-blue-background-luxury-style-vector.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+    .formulario {
+        width: 80%; /* Ajusta el ancho del formulario */
+        max-width: 600px; /* Establece un máximo para el ancho del formulario */
+        margin: 20px auto; /* Centra el formulario en la página */
+        background-color: rgba(52, 73, 94, 0.8); /* Cambié el color de fondo para hacerlo semi-transparente */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: left; /* Alineación del texto a la izquierda dentro del formulario */
+    }
+    .formulario h1, .formulario h2 {
+        color: #fff;
+        text-align: left; /* Alineación a la izquierda */
+    }
+    .formulario h3 {
+        color: #fff;
+        margin-top: 20px; /* Espacio superior entre el título y la lista de integrantes */
+    }
+    .formulario ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left; /* Alineación del texto de la lista a la izquierda */
+    }
+    .formulario li {
+        margin-bottom: 5px;
+    }
+    .stars {
+        display: flex;
+        justify-content: space-between; /* Alinear a la derecha */
+        margin-bottom: 20px;
+    }
+    .stars-text {
+        display: flex;
+        align-items: center; /* Alinear verticalmente con las estrellas */
+    }
+    .star {
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+    .star:hover, .star.active {
+        color: #27ae60;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    .button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.2s;
+    }
+    .button.green {
+        background-color: #27ae60;
+        color: #fff;
+    }
+    .button.green:hover {
+        background-color: #219d53;
+    }
+    .button.red {
+        background-color: #e74c3c;
+        color: #fff;
+    }
+    .button.red:hover {
+        background-color: #cf4334;
+    }
+</style>
+</head>
+<body>
+
+<div class="formulario">
+    <h2>Respuestas de Calor y Temperatura</h2>
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #1:</h3>
+                <div class="stars-text">
+                    <span>Calificación:8</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #2:</h3>
+                <div class="stars-text">
+                    <span>Calificación:9</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #3:</h3>
+                <div class="stars-text">
+                    <span>Calificación:7</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #4:</h3>
+                <div class="stars-text">
+                    <span>Calificación:7</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #5:</h3>
+                <div class="stars-text">
+                    <span>Calificación:9</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #6:</h3>
+                <div class="stars-text">
+                    <span>Calificación:9</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #7:</h3>
+                <div class="stars-text">
+                    <span>Calificación:6</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #8:</h3>
+                <div class="stars-text">
+                    <span>Calificación:1</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #9:</h3>
+                <div class="stars-text">
+                    <span>Calificación:2</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #10:</h3>
+                <div class="stars-text">
+                    <span>Calificación:2</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #11:</h3>
+                <div class="stars-text">
+                    <span>Calificación:10</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                    <span class="star" data-value="10">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #12:</h3>
+                <div class="stars-text">
+                    <span>Calificación:10</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                    <span class="star" data-value="10">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #13:</h3>
+                <div class="stars-text">
+                    <span>Calificación:9</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #14:</h3>
+                <div class="stars-text">
+                    <span>Calificación:7</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #15:</h3>
+                <div class="stars-text">
+                    <span>Calificación:9</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #16:</h3>
+                <div class="stars-text">
+                    <span>Calificación:9</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #17:</h3>
+                <div class="stars-text">
+                    <span>Calificación:8</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #18:</h3>
+                <div class="stars-text">
+                    <span>Calificación:10</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                    <span class="star" data-value="10">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #19:</h3>
+                <div class="stars-text">
+                    <span>Calificación:10</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                    <span class="star" data-value="10">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div><div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #20:</h3>
+                <div class="stars-text">
+                    <span>Calificación:6</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #21:</h3>
+                <div class="stars-text">
+                    <span>Calificación:10</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                    <span class="star" data-value="10">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #22:</h3>
+                <div class="stars-text">
+                    <span>Calificación:10</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                    <span class="star" data-value="10">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #23:</h3>
+                <div class="stars-text">
+                    <span>Calificación:8</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #24:</h3>
+                <div class="stars-text">
+                    <span>Calificación:1</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #25:</h3>
+                <div class="stars-text">
+                    <span>Calificación:4</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #26:</h3>
+                <div class="stars-text">
+                    <span>Calificación:9</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                    <span class="star" data-value="8">★</span>
+                    <span class="star" data-value="9">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="formulario">
+    <form id="calificacionForm">
+        <div id="calificacion">
+            <div class="stars">
+                <h3>Usuario Anonimo #27:</h3>
+                <div class="stars-text">
+                    <span>Calificación:7</span>
+                    <br>
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="6">★</span>
+                    <span class="star" data-value="7">★</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
